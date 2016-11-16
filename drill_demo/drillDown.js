@@ -122,6 +122,7 @@ var drillDown = {
                 legend: {
                     data: ['人次']
                 },
+                color:['blue'],
                 xAxis: {
                     data: ["韩医生", "赵医生", "李医生", "史医生", "梁医生"]
                 },
@@ -192,6 +193,7 @@ var drillDown = {
                 legend: {
                     data: ['人次']
                 },
+                color:['green'],
                 xAxis: {
                     data: ["韩医生", "赵医生", "李医生", "史医生", "梁医生", "最医生"]
                 },
@@ -227,6 +229,7 @@ var drillDown = {
                 legend: {
                     data: ['人次']
                 },
+                color:['yellow'],
                 xAxis: {
                     data: ["韩医生", "史医生", "梁医生"]
                 },
