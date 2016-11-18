@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+   <head>
+       <meta charset="utf-8">
+   </head>
+   <body>
+      <!-- <div style="margin-left:40%;margin-top:2%">
+        <button id='return-button' value=''>返回</button>
+      </div> -->
+      <div id="container" style="height: 500px;width: 550px;float: left;display: inline;"></div>
+      <div id="container1" style="height: 500px;width: 550px;float: left;display: inline;"></div>
+      <div id="container2" style="height: 500px;width: 1100px"></div>
+      <!-- <div id="container" style="height:430px;width:500px;float: left;display: inline;"></div>
+      <div id="container1" style="height:400px ;width:500px;float: left;;display: inline;"></div>
+      <div id="container2" style="height: 400px;width: 1000px;"></div> -->
+      <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts-all-3.js"></script>
+      <script type="text/javascript" src="../jquery.js"></script>
+      <script type="text/javascript" src="./drillDown.js"></script>
+      <script type="text/javascript">
+          var dom = document.getElementById("container1");
+          var myChart = echarts.init(dom);
+          var option = drillDown.getOption();
+          drillDown.initChart_line(myChart,option);
+          drillDown.initChart(myChart,option);
+          drillDown.initChart1(myChart,option);
+          drillDown.initChart2(myChart,option);
+          drillDown.initChart3(myChart,option);
+          drillDown.initChart4(myChart,option);
+
+          // $('#return-button').on('click',function(){
+          //     var myChart = echarts.init(dom);
+          //     var option = drillDown.getOption();
+          //     drillDown.initChart(myChart,option);
+          // });
+      </script>
+   </body>
+</html>
